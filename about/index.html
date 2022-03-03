@@ -59,7 +59,7 @@
     CONFIG = {
       isHome: false,
       fancybox: true,
-      pjax: false,
+      pjax: true,
       loading: {
         gif: '/images/theme/loading.gif',
         lottie: ''
@@ -73,7 +73,7 @@
         }
       },
       donate: {
-        enable: false,
+        enable: true,
         alipay: '',
         wechat: ''
       },
@@ -97,9 +97,9 @@
         },
         motto: {
           default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
+          typing: ,
+          api: 'https://v1.hitokoto.cn/?encode=text&c=j',
+          data_contents: ''
         },
       },
       qrcode: {
@@ -172,15 +172,15 @@
     <ul class="menu-content"><li class="menu-item">
         <a href="/ " class="underline "> 首页</a>
       </li><li class="menu-item">
-        <a href="/galleries/ " class="underline "> 摄影</a>
+        <a href="/galleries " class="underline "> 摄影</a>
       </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
+        <a href="/archives " class="underline "> 归档</a>
       </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
+        <a href="/tags " class="underline "> 标签</a>
       </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
+        <a href="/categories " class="underline "> 分类</a>
       </li><li class="menu-item">
-        <a href="/about/ " class="underline active"> 关于</a>
+        <a href="/about " class="underline "> 关于</a>
       </li></ul>
     
       <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
@@ -222,14 +222,16 @@
       </section>
       <section class="extra">
         
-          <ul class="copyright">
-  
-    <li><strong>本文作者：</strong>John Doe</li>
-    <li><strong>本文链接：</strong><a href="http://example.com/about/index.html" title="http:&#x2F;&#x2F;example.com&#x2F;about&#x2F;index.html">http:&#x2F;&#x2F;example.com&#x2F;about&#x2F;index.html</a></li>
-    <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
-  
-</ul>
         
+          <section class="donate">
+  <div id="qrcode-donate">
+    <img src="">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
         
         
         
@@ -274,11 +276,6 @@
       <div class="col-xl-3">
         
           
-  <aside class="toc-wrap">
-    <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Me"><span class="toc-text">Me</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HobbY"><span class="toc-text">HobbY</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Contact"><span class="toc-text">Contact</span></a></li></ol>
-  </aside>
-
         
       </div>
     </div>
@@ -363,6 +360,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 
+
+
+  
+<script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 
 
 

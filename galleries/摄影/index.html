@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>相册 - QZQ</title>
+  <title>摄影 - QZQ</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
@@ -59,7 +59,7 @@
     CONFIG = {
       isHome: false,
       fancybox: true,
-      pjax: false,
+      pjax: true,
       loading: {
         gif: '/images/theme/loading.gif',
         lottie: ''
@@ -73,7 +73,7 @@
         }
       },
       donate: {
-        enable: false,
+        enable: true,
         alipay: '',
         wechat: ''
       },
@@ -97,9 +97,9 @@
         },
         motto: {
           default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
+          typing: ,
+          api: 'https://v1.hitokoto.cn/?encode=text&c=j',
+          data_contents: ''
         },
       },
       qrcode: {
@@ -152,7 +152,7 @@
       
       
     </div>
-    <div class="center">相册</div>
+    <div class="center">摄影</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -172,15 +172,15 @@
     <ul class="menu-content"><li class="menu-item">
         <a href="/ " class="underline "> 首页</a>
       </li><li class="menu-item">
-        <a href="/galleries/ " class="underline active"> 摄影</a>
+        <a href="/galleries " class="underline "> 摄影</a>
       </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
+        <a href="/archives " class="underline "> 归档</a>
       </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
+        <a href="/tags " class="underline "> 标签</a>
       </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
+        <a href="/categories " class="underline "> 分类</a>
       </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
+        <a href="/about " class="underline "> 关于</a>
       </li></ul>
     
       <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
@@ -275,6 +275,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 
+
+
+  
+<script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 
 
 
